@@ -13,6 +13,15 @@
     <title>HOT 4 JESUS</title>
   </head>
   <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+      </div>
+    </div>
+    <!-- // Preloader -->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand fs-3 fw-bold">Hot 4 Jesus</a>
@@ -58,18 +67,18 @@
       <div class="container">
         <div class="row g-4">
           <div class="col-md">
-            <h1 class="text-uppercase fs-1">
+            <h1 class="text-uppercase fs-1 hidden">
               This is the Hot For Jesus Talent Competition
             </h1>
-            <p class="lead pt-3">
+            <p class="lead pt-3 hidden">
               <b>Hot for Jesus:</b> Hot for our lord and saviour Jesus christ
             </p>
             <h2 class="container-text">
               I AM <span id="typewriter"></span><span id="cursor">|</span>
             </h2>
-            <p class="lead">For our Lord and saviour Jesus Christ</p>
+            <p class="lead hidden">For our Lord and saviour Jesus Christ</p>
           </div>
-          <div class="col-md">
+          <div class="col-md hidden">
             <img src="images/logo.png" alt="" class="img-fluid bg-primary" />
           </div>
         </div>
@@ -80,14 +89,14 @@
       <div class="container">
         <div>
           <div>
-            <h2>A litle About Us</h2>
-            <p class="lead">
+            <h2 class="hidden">A litle About Us</h2>
+            <p class="lead hidden">
               The first Audition for the Hot for Jesus talent Competition.
               started in the year 2021 Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Ipsam vero quibusdam doloremque neque accusamus
               doloribus facilis ex modi culpa! Qui.
             </p>
-            <p class="lead">
+            <p class="lead hidden">
               The Hot for Jesus talent Competition was founded by ........ This
               competition is being created to for the youth, children and adults
               to encourage them to live by the word of God, While bringing out
@@ -101,23 +110,135 @@
 
     <section class="py-5" id="competition">
       <div class="container">
-        <h2 class="text-center pb-5">
+        <h2 class="text-center pb-5 hidden">
           These are the competitions you can partake in
         </h2>
-        <ol class="list-group list-group-numbered">
-          <li class="list-group-item">Gospel Song</li>
-          <li class="list-group-item">Maths / 1Q</li>
-          <li class="list-group-item">Bible Quiz</li>
-          <li class="list-group-item">Bible Character</li>
-          <li class="list-group-item">Bible Recitation</li>
-          <li class="list-group-item">Innovative Creations</li>
-        </ol>
+        <div class="row g-4">
+          <div class="col-md col-lg-4">
+            <div class="card hidden h-100">
+              <div class="grid-item">
+                <img
+                  src="images/gospel songs.jpg"
+                  class="card-img-top img-fluid grid-image"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Gospel Song</h2>
+                <p class="card-text lead">
+                  Sing your best Gospel song or an original before a panel of
+                  judges. participants stand the chance of winning a cash award
+                  of $1000. [Given in Fcfa at an exchange rate of $1 to 500f]
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md col-lg-4">
+            <div class="card hidden h-100">
+              <div class="grid-item">
+                <img
+                  src="images/Maths&IQ.jpeg"
+                  class="card-img-top img-fluid grid-image"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Math/IQ</h2>
+                <p class="card-text lead">
+                  participants will be given a guide study book to help them
+                  prepare for the contest. All questions will come from the
+                  study Guide. The winner stands the chance of winning a Laptop.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md col-lg-4">
+            <div class="card hidden h-100">
+              <div class="grid-item">
+                <img
+                  src="images/bible quiz.jpg"
+                  class="card-img-top img-fluid grid-image"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Bible Quiz</h2>
+                <p class="card-text lead">
+                  participants will be given a guide study book to help them
+                  prepare for the contest. All questions will come from the
+                  study Guide. The winner stands the chance of winning a
+                  refrigirator.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md col-lg-4">
+            <div class="card hidden h-100">
+              <div class="grid-item">
+                <img
+                  src="images/bible charcter.jpg"
+                  class="card-img-top img-fluid grid-image"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Bible Character Costume Prade</h2>
+                <p class="card-text lead">
+                  Contestants will choose any bible Character, design a custome
+                  to portray the Character and will be given one minute to
+                  display same, without speech before a panel of judges. The
+                  winner stands the chance of winning a smart TV.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md col-lg-4">
+            <div class="card hidden h-100">
+              <div class="grid-item">
+                <img
+                  src="images/bible recitation.jpg"
+                  class="card-img-top img-fluid grid-image"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Bible Recitation</h2>
+                <p class="card-text lead">
+                  How many bible verses can you recite correctly in one minute
+                  before a panel of judges. The winner stands the chance of
+                  winning a smart TV.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md col-lg-4">
+            <div class="card hidden h-100">
+              <div class="grid-item">
+                <img
+                  src="images/Creative Innovation.jpeg"
+                  class="card-img-top img-fluid grid-image"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">Innovative Creation</h2>
+                <p class="card-text lead">
+                  Using spoken word, animations, creative arts and comedy to
+                  promote the gospel.[maximun 2 minutes]. The winner stands the
+                  chnace of winning an oven.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="py-5 bg-primary" id="prices">
       <div class="container">
-        <h1 class="text-center pb-5 text-white">Prices to be won 😀😀😀</h1>
+        <h1 class="text-center pb-5 text-white hidden">
+          Prices to be won 😀😀😀
+        </h1>
         <div
           id="carouselExampleCaptions"
           class="carousel slide"
@@ -174,7 +295,7 @@
             </div>
             <div class="carousel-item c-item">
               <img
-                src="images/laptop2.jpg"
+                src="images/laptop.jpg"
                 class="d-block w-100 c-image"
                 alt="..."
               />
@@ -207,7 +328,7 @@
                 class="d-block w-100 c-image"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h1>A smart Tv</h1>
                 <p class="lead fs-2">
                   The winner of the bible recitation goes home with a brand new
@@ -218,7 +339,7 @@
 
             <div class="carousel-item c-item">
               <img
-                src="images/oven2.jpg"
+                src="images/oven.jpg"
                 class="d-block w-100 c-image"
                 alt="..."
               />
@@ -255,7 +376,7 @@
 
     <section class="py-5 bg-secondary" id="faq">
       <div class="container">
-        <h1 class="text-center pb-5 text-white">
+        <h1 class="text-center pb-5 text-white hidden">
           Some Frequently Asked Questions
         </h1>
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -330,7 +451,7 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                <b>Yes</b>in some category in which there is a stand out
+                <b>Yes</b> in some category in which there is a stand out
                 performance of individuals there can be a price for the second
                 and sometimes third.
               </div>
@@ -342,7 +463,7 @@
 
     <section class="py-5" id="contact">
       <div class="container">
-        <h2 class="text-center pb-5">Contact Us</h2>
+        <h2 class="text-center pb-5 hidden">Contact Us</h2>
         <div class="row g-4">
           <div class="col-md">
             <ul class="list-group list-group-flush">
@@ -366,7 +487,7 @@
 
     <footer class="py-2 bg-dark text-white text-center">
       <div class="container">
-        <p class="lead pt-3">Copyright &copy; 2023 Hot for Jesus</p>
+        <p class="lead pt-3 hidden">Copyright &copy; 2023 Hot for Jesus</p>
       </div>
     </footer>
   </body>

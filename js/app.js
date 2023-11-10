@@ -1,3 +1,13 @@
+let preloader = document.querySelector('.preloader')
+
+window.addEventListener('load', () => {
+  preloader.style.opacity = '0'
+
+  setTimeout(() => {
+    preloader.style.display = 'none'
+  }, 1000)
+})
+
 function sleep(ms) {
   return new Promise((resolve) => {
     setTimeout(resolve, ms)
@@ -44,7 +54,7 @@ let currentSection = 'home'
 
 window.addEventListener('scroll', () => {
   sections.forEach((sectionEl) => {
-    if (window.scrollY >= sectionEl.offsetTop - sectionEl.clientHeight / 2) {
+    if (window.scrollY >= sectionEl.offsetTop - 150) {
       currentSection = sectionEl.id
     }
   })
@@ -55,4 +65,21 @@ window.addEventListener('scroll', () => {
       navLinkEl.classList.add('active')
     }
   })
+})
+
+const hiddenElements = document.querySelectorAll('.hidden')
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show')
+    } else {
+      entry.target.classList.remove('show')
+    }
+  })
+})
+
+hiddenElements.forEach((el) => {
+  observer.observe(el)
 })
